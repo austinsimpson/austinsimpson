@@ -81,7 +81,7 @@ public:
                 ++index;
             }   
             auto totalsAsVector = totals.values();
-            std::sort(totalsAsVector.begin(), totalsAsVector.end(), [](auto firstPair, auto secondPair)
+			std::sort(totalsAsVector.begin(), totalsAsVector.end(), [](const QPair<int, int>& firstPair, const QPair<int, int>& secondPair)
             {
                 return firstPair.second > secondPair.second;
             });

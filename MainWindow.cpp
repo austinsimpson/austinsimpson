@@ -3,16 +3,15 @@
 
 #include <QCheckBox>
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+MainWindow::MainWindow
+(
+	QWidget* parent
+):
+	QMainWindow(parent),
+	ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
     connect(ui->_categorySpinBox, QOverload<int>::of(&QSpinBox::valueChanged), ui->_pointsWidget, &PointsWidget::setCurrentCategory);
-   
-    connect(ui->_trainingModeCheckbox, &QCheckBox::stateChanged, [this](int state) {
-        ui->_pointsWidget->setTrainingMode(ui->_trainingModeCheckbox->isChecked());
-    });
 
     connect(ui->_neighborCountSpinBox, QOverload<int>::of(&QSpinBox::valueChanged), ui->_pointsWidget, &PointsWidget::setNeighborCount);
     connect(ui->_resetButton, &QPushButton::clicked, ui->_pointsWidget, &PointsWidget::reset);
