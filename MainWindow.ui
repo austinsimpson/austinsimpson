@@ -37,30 +37,13 @@
          </widget>
         </item>
         <item row="1" column="0">
-         <widget class="QLabel" name="label_2">
-          <property name="text">
-           <string>Is Training:</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="1">
-         <widget class="QCheckBox" name="_trainingModeCheckbox">
-          <property name="text">
-           <string/>
-          </property>
-          <property name="checked">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="0">
          <widget class="QLabel" name="label_3">
           <property name="text">
            <string>Neighbor Count:</string>
           </property>
          </widget>
         </item>
-        <item row="2" column="1">
+        <item row="1" column="1">
          <widget class="QSpinBox" name="_neighborCountSpinBox">
           <property name="minimum">
            <number>1</number>
@@ -70,24 +53,24 @@
           </property>
          </widget>
         </item>
-        <item row="3" column="0">
+        <item row="2" column="0">
          <widget class="QLabel" name="label_4">
           <property name="text">
            <string/>
           </property>
          </widget>
         </item>
-        <item row="4" column="1">
-         <widget class="QPushButton" name="_trainButton">
+        <item row="2" column="1">
+         <widget class="QPushButton" name="_resetButton">
           <property name="text">
-           <string>Train</string>
+           <string>Reset</string>
           </property>
          </widget>
         </item>
         <item row="3" column="1">
-         <widget class="QPushButton" name="_resetButton">
+         <widget class="QPushButton" name="_trainButton">
           <property name="text">
-           <string>Reset</string>
+           <string>Train</string>
           </property>
          </widget>
         </item>
