@@ -44,14 +44,13 @@ void PointsWidget::paintEvent
     QPainter painter;
     painter.begin(this);
     
+	painter.setBrush(Qt::lightGray);
+	painter.fillRect(0, 0, width(), height(), Qt::white);
+
     QTransform transform;
     transform.translate(width() / 2, height() / 2);
     transform.scale(1.0, -1.0);
     painter.setTransform(transform);
-
-
-    painter.setBrush(Qt::lightGray);
-    painter.fillRect(0, 0, width(), height(), Qt::white);
 
     drawResults(painter);
     drawGrid(painter);

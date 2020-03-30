@@ -14,37 +14,62 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,3">
+   <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,3">
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout" stretch="0,3">
+     <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <layout class="QFormLayout" name="formLayout">
-        <property name="sizeConstraint">
-         <enum>QLayout::SetDefaultConstraint</enum>
-        </property>
-        <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
          <widget class="QLabel" name="label">
           <property name="text">
            <string>Current Category:</string>
           </property>
          </widget>
         </item>
-        <item row="0" column="1">
+        <item>
          <widget class="QSpinBox" name="_categorySpinBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>0</height>
+           </size>
+          </property>
           <property name="maximum">
            <number>2</number>
           </property>
          </widget>
         </item>
-        <item row="1" column="0">
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
          <widget class="QLabel" name="label_3">
           <property name="text">
            <string>Neighbor Count:</string>
           </property>
          </widget>
         </item>
-        <item row="1" column="1">
+        <item>
          <widget class="QSpinBox" name="_neighborCountSpinBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>0</height>
+           </size>
+          </property>
           <property name="minimum">
            <number>1</number>
           </property>
@@ -53,22 +78,31 @@
           </property>
          </widget>
         </item>
-        <item row="2" column="0">
-         <widget class="QLabel" name="label_4">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="1">
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
          <widget class="QPushButton" name="_resetButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
           <property name="text">
            <string>Reset</string>
           </property>
          </widget>
         </item>
-        <item row="3" column="1">
+        <item>
          <widget class="QPushButton" name="_trainButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
           <property name="text">
            <string>Train</string>
           </property>
@@ -81,13 +115,10 @@
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
-        <property name="sizeType">
-         <enum>QSizePolicy::MinimumExpanding</enum>
-        </property>
         <property name="sizeHint" stdset="0">
          <size>
           <width>20</width>
-          <height>80</height>
+          <height>40</height>
          </size>
         </property>
        </spacer>
